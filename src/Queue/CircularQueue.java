@@ -8,6 +8,7 @@ package Queue;
 /**
  *
  * @author MIPC
+ * @param <E> any type
  */
 public interface CircularQueue<E> extends Queue<E>{
     /**
