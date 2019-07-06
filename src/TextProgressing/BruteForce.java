@@ -117,13 +117,15 @@ public class BruteForce {
     //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="Main">
     public static void main(String[] args){
-        char[] word = {'a', 'r', 'b', 't', 'e', 'c', 'o', 'c', 'o','e','r','v','e', 'r'};
+        /*char[] word = {'a', 'r', 'b', 't', 'e', 'c', 'o', 'c', 'o','e','r','v','e', 'r'};
         char[] pattern = {'c', 'o', 'c', 'o'};
         char[] pattern1 = {'v', 'e', 'r'};
         if(findBoyerMoore(word, pattern) >= 0)
             System.out.println(String.format("La palabra %s está contenida en el texto %s.", Arrays.toString(pattern),Arrays.toString(word)));
         else
             System.out.println(String.format("La palabra %s NO está contenida en el texto %s.", Arrays.toString(pattern), Arrays.toString(word)));
+        */
+        System.out.println(findBrute("ababa".toCharArray(), "aba".toCharArray()));
     }
     //</editor-fold>
 }
