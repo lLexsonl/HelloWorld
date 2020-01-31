@@ -46,6 +46,11 @@ public class MergeSort<K> {
         int mid = n / 2;
         K[] S1 = Arrays.copyOfRange(S, 0, mid);             //copy of first half
         K[] S2 = Arrays.copyOfRange(S, mid, n);             //copy of second half
+        
+        // conquer (with recursion)
+        mergeSort(S1, comp); // sort copy of first half
+        mergeSort(S2, comp);
+        
         //merge results
         mergeArray(S1, S2, S, comp);
     }
